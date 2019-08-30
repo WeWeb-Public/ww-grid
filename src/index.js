@@ -48,14 +48,25 @@ const addComponent = function () {
                         },
 
                         {
-                            name: 'LAYOUT',
+                            name: 'ROWS',
                             text: {
-                                en: 'Layout',
-                                fr: 'Disposition'
+                                en: 'Rows',
+                                fr: 'Lignes'
                             },
-                            icon: 'fas fa-th-large',
-                            action: 'editLayout'
+                            icon: 'fas fa-grip-lines',
+                            action: 'editRows'
                         },
+
+                        {
+                            name: 'COLUMNS',
+                            text: {
+                                en: 'Columns',
+                                fr: 'Colonnes'
+                            },
+                            icon: 'fas fa-grip-lines-vertical',
+                            action: 'editColumns'
+                        },
+
 
                     ]
                 }
@@ -69,27 +80,27 @@ const addComponent = function () {
                             {
                                 _c: [0, 1, 2],
                                 _mt: new wwLib.wwTypes.ValueUnit('0px'),
-                                _mh: new wwLib.wwTypes.ValueUnit('0px'),
-                                _jc: 'flex-start'
+                                _mh: new wwLib.wwTypes.ValueUnit('100px'),
+                                _jc: 'center'
                             }
                         ]),
                         columns: [
                             {
-                                _w: new wwLib.wwTypes.ResponsiveDevice(new wwLib.wwTypes.ValueUnit('1r')),
+                                _w: new wwLib.wwTypes.ResponsiveDevice(new wwLib.wwTypes.ValueUnit('1u')),
                                 _o: new wwLib.wwTypes.ResponsiveDevice(new wwLib.wwTypes.ValueUnit('0px')),
                                 _po: new wwLib.wwTypes.ResponsiveDevice(new wwLib.wwTypes.ValueUnit('0px')),
                                 _c: null,
                                 _i: 0
                             },
                             {
-                                _w: new wwLib.wwTypes.ResponsiveDevice(new wwLib.wwTypes.ValueUnit('1r')),
+                                _w: new wwLib.wwTypes.ResponsiveDevice(new wwLib.wwTypes.ValueUnit('1u')),
                                 _o: new wwLib.wwTypes.ResponsiveDevice(new wwLib.wwTypes.ValueUnit('0px')),
                                 _po: new wwLib.wwTypes.ResponsiveDevice(new wwLib.wwTypes.ValueUnit('0px')),
                                 _c: null,
                                 _i: 1
                             },
                             {
-                                _w: new wwLib.wwTypes.ResponsiveDevice(new wwLib.wwTypes.ValueUnit('1r')),
+                                _w: new wwLib.wwTypes.ResponsiveDevice(new wwLib.wwTypes.ValueUnit('1u')),
                                 _o: new wwLib.wwTypes.ResponsiveDevice(new wwLib.wwTypes.ValueUnit('0px')),
                                 _po: new wwLib.wwTypes.ResponsiveDevice(new wwLib.wwTypes.ValueUnit('0px')),
                                 _c: null,
